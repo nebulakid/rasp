@@ -1,0 +1,5 @@
+docker kill pihole
+docker rm pihole
+echo "Y" | docker images prune -a
+echo "Y" | docker container prune
+echo "Y" | docker system prune
